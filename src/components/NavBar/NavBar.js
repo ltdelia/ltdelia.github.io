@@ -16,14 +16,24 @@ export default function NavBar() {
           >
             <MenuIcon />
           </IconButton> */}
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+          <Typography variant="h5" component="div" sx={{ flexGrow: 1 }}>
             Louis T. Delia
           </Typography>
-          <Link href="#about-me" color="inherit">About Me</Link>
-          <Link href="#skills" color="inherit">Skills</Link>
-          <Link href="#work" color="inherit">Work</Link>
-          <Link href="#other" color="inherit">Other</Link>
-          <Link href="#contact" color="inherit">Contact</Link>
+          <Box sx={{ margin: 1 }}>
+            <Link href="#about-me" color="inherit" underline="hover">About Me</Link>
+          </Box>
+          <Box sx={{ margin: 1 }}>
+            <Link href="#skills" color="inherit" underline="hover">Skills</Link>
+          </Box>
+          <Box sx={{ margin: 1 }}>
+            <Link href="#work" color="inherit" underline="hover">Work</Link>
+          </Box>
+          <Box sx={{ margin: 1 }}>
+            <Link href="#other" color="inherit" underline="hover">Other</Link>
+          </Box>
+          <Box sx={{ margin: 1 }}>
+            <Link href="#contact" color="inherit" underline="hover">Contact</Link>
+          </Box>
         </Toolbar>
       </AppBar>
     </Box>
