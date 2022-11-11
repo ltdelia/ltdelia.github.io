@@ -1,5 +1,8 @@
 import React from "react";
-import { Box, Container } from "@mui/material";
+import { Box, Container, Grid } from "@mui/material";
+import SkillCard from "./SkillCard";
+
+import { skills } from "../../data/skills";
 
 export default function Skills() {
   return (
@@ -7,30 +10,15 @@ export default function Skills() {
       <Container fixed>
         <Box>
           <div id="skills">
-            <h1>Skills</h1>
-            <ul>
-              <li>JavaScript</li>
-              <li>TypeScript</li>
-              <li>PHP</li>
-              <li>Node.js</li>
-              <li>Express</li>
-              <li>MongoDB</li>
-              <li>MySQL</li>
-              <li>Firebase</li>
-              <li>AWS</li>
-              <li>React</li>
-              <li>Angular</li>
-              <li>Vue</li>
-              <li>PhotoShop</li>
-              <li>Figma</li>
-              <li>SCSS</li>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>jQuery</li>
-              <li>Bootstrap</li>
-              <li>Material</li>
-              <li>Git Bash</li>
-            </ul>
+            <h2>Skills</h2>
+            <Grid container spacing={2} direction="row" justify="flex-start" alignItems="flex-start">
+
+              {skills.map((skill) => (
+                <Grid item xs={12} sm={6} md={4} key={skills.indexOf(skill)}>
+                  <SkillCard skillName={skill.skillName} skillDescription={skill.skillDescription} skillSrc={skill.skillSrc} />
+                </Grid>
+              ))}
+              </Grid>
           </div>
         </Box>
       </Container>
