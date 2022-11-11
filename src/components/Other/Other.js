@@ -7,7 +7,7 @@ export default function Other() {
       <Container fixed>
         <Box>
           <div id="other">
-            <h1>Other Work</h1>
+            <h2>Other Work</h2>
             Outside of web development, here's where else you can find me:
             <ul>
               <li>Bandcamp</li>

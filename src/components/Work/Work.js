@@ -7,7 +7,7 @@ export default function Work() {
       <Container fixed>
         <Box>
           <div id="work">
-            <h1>Work</h1>
+            <h2>Work</h2>
             Here are some projects -to-done -telephone-translator
           </div>
         </Box>

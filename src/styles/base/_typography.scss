@@ -1,0 +1,31 @@
+// base/_typography.scss
+
+$base-size: 16px;
+
+h1 {
+    font-size: $base-size * 4;
+}
+
+h2 {
+    font-size: $base-size * 3;
+}
+
+h3 {
+    font-size: $base-size * 2;
+}
+
+h4 {
+    font-size: $base-size * 1.7;
+}
+
+h5 {
+    font-size: $base-size * 1.4;
+}
+
+h6 {
+    font-size: $base-size * 1.2;
+}
+
+p {
+    font-size: $base-size;
+}
