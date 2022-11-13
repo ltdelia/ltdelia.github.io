@@ -3,7 +3,7 @@ import { Card, CardActions, CardContent, CardMedia, Button, Typography } from "@
 
 export default function SkillCard({skillName, skillDescription, skillSrc}) {
   return (
-    <Card sx={{ minWidth: 275 }}>
+    <Card sx={{ minWidth: 200 }}>
       <CardMedia
         component="img"
         image={skillSrc}
@@ -18,7 +18,7 @@ export default function SkillCard({skillName, skillDescription, skillSrc}) {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small">Learn More</Button>
+        <Button size="small">See Projects With This Skill</Button>
       </CardActions>
     </Card>
   );
