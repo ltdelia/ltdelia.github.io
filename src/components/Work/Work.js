@@ -1,14 +1,27 @@
-import React from "react";
-import { Box, Container } from "@mui/material";
+import React, { useState } from "react";
+import { Box, Container, Grid } from "@mui/material";
+
+import ProjectCard from "./ProjectCard";
+
+import { projects } from "../../data/projects";
 
 export default function Work() {
+
   return (
     <>
       <Container fixed>
         <Box>
           <div id="work">
             <h2>Work</h2>
-            Here are some projects -to-done -telephone-translator
+            <Grid container spacing={2} direction="row" justify="flex-start" alignItems="flex-start">
+
+              {projects.map((project) => (
+                <Grid item xs={12} sm={6} md={4} lg={3} key={projects.indexOf(project)}>
+                  <ProjectCard projectName={project.projectName} projectDescription={project.projectDescription} projectSrc={project.projectSrc} projectUrl={project.projectUrl} projectSkills={project.projectSkills} />
+                </Grid>
+              ))}
+              </Grid>
+
           </div>
         </Box>
       </Container>
