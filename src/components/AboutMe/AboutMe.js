@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Container } from "@mui/material";
+import { Avatar, Box, Container } from "@mui/material";
 
 export default function AboutMe() {
   return (
@@ -8,6 +8,7 @@ export default function AboutMe() {
         <Box>
           <div className="about-me">
             <h2>About Me</h2>
+            <Avatar alt="Louis T. Delia" src="images/louisdelia.jpg" sx={{ width: 250, height: 250 }} />
             <p>
               Louis T. Delia (he/they) is a web developer, musician, and
               blogger. He is currently employed in AI at Talkdesk. He also makes
