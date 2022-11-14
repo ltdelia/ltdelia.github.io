@@ -16,7 +16,7 @@ export default function ProjectCard({projectName, projectDescription, projectSrc
         <Typography variant="body2">
           {projectDescription}
         </Typography>
-        <Stack direction="row" spacing={1}>
+        <Stack className="project-skills-list" direction="row" spacing={1}>
           {projectSkills.map((skill) => <Chip key={projectSkills.indexOf(skill)} label={skill} />)}
         </Stack>
       </CardContent>
