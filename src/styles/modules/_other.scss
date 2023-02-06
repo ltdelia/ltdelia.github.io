@@ -1,0 +1,15 @@
+// modules/_other.scss
+
+.other-work-description {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.other-work-group {
+    display: flex !important;
+    justify-content: center;
+
+    &-link {
+        text-decoration: none;
+    }
+}
