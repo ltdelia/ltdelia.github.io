@@ -1,12 +1,14 @@
 import * as React from "react";
 import { CssBaseline } from "@mui/material";
+
 import AboutMe from "./components/AboutMe/AboutMe";
 import NavBar from "./components/NavBar/NavBar";
 import Skills from "./components/Skills/Skills";
 import Work from "./components/Work/Work";
-import "./styles/main.scss";
 import Other from "./components/Other/Other";
-import Contact from "./components/Contact/Contact";
+import Footer from "./components/UI/Section/Footer";
+
+import "./styles/main.scss";
 
 function App() {
   return (
@@ -19,8 +21,8 @@ function App() {
           <Skills />
           <Work />
           <Other />
-          <Contact />
         </div>
+        <Footer />
       </div>
     </>
   );
