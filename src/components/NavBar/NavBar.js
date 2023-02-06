@@ -1,6 +1,10 @@
+import * as React from "react";
+import { AppBar, Box, Toolbar, Typography, Link } from "@mui/material";
+import IconButton from "@mui/material/IconButton";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import EmailIcon from "@mui/icons-material/Email";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
-import * as React from 'react';
-import { AppBar, Box, Toolbar, Typography, Link } from '@mui/material';
 
 export default function NavBar() {
   return (
@@ -20,19 +24,63 @@ export default function NavBar() {
             Louis T. Delia
           </Typography>
           <Box sx={{ margin: 1 }}>
-            <Link href="#about-me" color="inherit" underline="hover">About Me</Link>
+            <Link href="#about-me" color="inherit" underline="hover">
+              About Me
+            </Link>
           </Box>
           <Box sx={{ margin: 1 }}>
-            <Link href="#skills" color="inherit" underline="hover">Skills</Link>
+            <Link href="#skills" color="inherit" underline="hover">
+              Skills
+            </Link>
           </Box>
           <Box sx={{ margin: 1 }}>
-            <Link href="#work" color="inherit" underline="hover">Work</Link>
+            <Link href="#work" color="inherit" underline="hover">
+              Work
+            </Link>
           </Box>
           <Box sx={{ margin: 1 }}>
-            <Link href="#other" color="inherit" underline="hover">Other</Link>
+            <Link href="#other" color="inherit" underline="hover">
+              Other
+            </Link>
           </Box>
           <Box sx={{ margin: 1 }}>
-            <Link href="#contact" color="inherit" underline="hover">Contact</Link>
+            <Typography>|</Typography>
+          </Box>
+          <Box sx={{ margin: 1 }}>
+            <a href="https://github.com/ltdelia" target="_blank">
+              <IconButton
+                className="navbar-icon-button"
+                color="inherit"
+                aria-label="Github | Louis T. Delia"
+                component="label"
+              >
+                <GitHubIcon />
+              </IconButton>
+            </a>
+          </Box>
+          <Box sx={{ margin: 1 }}>
+            <a href="mailto:delia.louis@gmail.com">
+              <IconButton
+                className="navbar-icon-button"
+                color="inherit"
+                aria-label="Email Louis T. Delia"
+                component="label"
+              >
+                <EmailIcon />
+              </IconButton>
+            </a>
+          </Box>
+          <Box sx={{ margin: 1 }}>
+            <a href="https://www.linkedin.com/in/ltdelia" target="_blank">
+              <IconButton
+                className="navbar-icon-button"
+                color="inherit"
+                aria-label="LinkedIn | Louis T. Delia"
+                component="label"
+              >
+                <LinkedInIcon />
+              </IconButton>
+            </a>
           </Box>
         </Toolbar>
       </AppBar>
