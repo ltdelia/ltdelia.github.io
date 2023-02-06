@@ -1,5 +1,5 @@
 import * as React from "react";
-import { AppBar, Box, Toolbar, Typography, Link } from "@mui/material";
+import { AppBar, Box, Toolbar, Typography } from "@mui/material";
 import IconButton from "@mui/material/IconButton";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import EmailIcon from "@mui/icons-material/Email";
@@ -53,7 +53,7 @@ export default function NavBar() {
             <Typography>|</Typography>
           </Box>
           <Box sx={{ margin: 1 }}>
-            <a href="https://github.com/ltdelia" target="_blank">
+            <a href="https://github.com/ltdelia" target="_blank" rel="noreferrer">
               <IconButton
                 className="navbar-icon-button"
                 color="inherit"
@@ -77,7 +77,7 @@ export default function NavBar() {
             </a>
           </Box>
           <Box sx={{ margin: 1 }}>
-            <a href="https://www.linkedin.com/in/ltdelia" target="_blank">
+            <a href="https://www.linkedin.com/in/ltdelia" target="_blank" rel="noreferrer">
               <IconButton
                 className="navbar-icon-button"
                 color="inherit"

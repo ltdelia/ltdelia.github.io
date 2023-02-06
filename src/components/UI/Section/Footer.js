@@ -12,7 +12,7 @@ export default function Footer() {
         <Box>
           <div id="footer">
             <div className="footer-controls">
-              <a href="https://github.com/ltdelia" target="_blank">
+              <a href="https://github.com/ltdelia" target="_blank" rel="noreferrer">
                 <IconButton
                   color="primary"
                   aria-label="Github | Louis T. Delia"
@@ -30,7 +30,7 @@ export default function Footer() {
                   <EmailIcon />
                 </IconButton>
               </a>
-              <a href="https://www.linkedin.com/in/ltdelia" target="_blank">
+              <a href="https://www.linkedin.com/in/ltdelia" target="_blank" rel="noreferrer">
                 <IconButton
                   color="primary"
                   aria-label="LinkedIn | Louis T. Delia"
