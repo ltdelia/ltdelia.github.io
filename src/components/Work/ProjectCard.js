@@ -3,7 +3,7 @@ import { Card, CardActions, CardContent, CardMedia, Chip, Link, Stack, Typograph
 
 export default function ProjectCard({projectName, projectDescription, projectSrc, projectUrl, projectSkills}) {
   return (
-    <Card sx={{ minWidth: 200 }}>
+    <Card className="project-card" sx={{ minWidth: 200, minHeight: 570 }}>
       <CardMedia
         component="img"
         image={projectSrc ? projectSrc : "images/coding.jpg"}
@@ -21,7 +21,7 @@ export default function ProjectCard({projectName, projectDescription, projectSrc
         </Stack>
       </CardContent>
       <CardActions>
-        <Link href={projectUrl} color="inherit" underline="hover" target="_blank">See On Github</Link>
+        <Link className="project-card-link" href={projectUrl} color="inherit" underline="hover" target="_blank">See On Github</Link>
       </CardActions>
     </Card>
   );

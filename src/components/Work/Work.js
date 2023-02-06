@@ -16,7 +16,7 @@ export default function Work() {
             <Grid container spacing={2} direction="row" justify="flex-start" alignItems="flex-start">
 
               {projects.map((project) => (
-                <Grid item xs={12} sm={6} md={4} lg={3} key={projects.indexOf(project)}>
+                <Grid item xs={12} sm={6} md={4} lg={4} key={projects.indexOf(project)}>
                   <ProjectCard projectName={project.projectName} projectDescription={project.projectDescription} projectSrc={project.projectSrc} projectUrl={project.projectUrl} projectSkills={project.projectSkills} />
                 </Grid>
               ))}

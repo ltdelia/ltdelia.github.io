@@ -1,5 +1,22 @@
 // components/_projectcard.scss
 
+.project-card {
+    position: relative;
+}
+
 .project-skills-list {
+    display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    row-gap: 10px;
+    margin: 10px 0;
+}
+
+.project-card-link {
+    position: absolute;
+    bottom: 0;
+    color: #2797cf !important;
+    text-transform: uppercase;
+    padding: 16px;
 }
