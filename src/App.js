@@ -1,5 +1,6 @@
 import * as React from "react";
 import { CssBaseline } from "@mui/material";
+import ScrollSpy from "react-ui-scrollspy";
 
 import AboutMe from "./components/AboutMe/AboutMe";
 import NavBar from "./components/NavBar/NavBar";
@@ -17,10 +18,12 @@ function App() {
       <div className="wrapper">
         <NavBar />
         <div className="sections-container">
-          <AboutMe />
-          <Skills />
-          <Work />
-          <Other />
+          <ScrollSpy scrollThrottle={100} useBoxMethod={false}>
+            <AboutMe />
+            <Skills />
+            <Work />
+            <Other />
+          </ScrollSpy>
         </div>
         <Footer />
       </div>

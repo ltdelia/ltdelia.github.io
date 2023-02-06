@@ -3,3 +3,19 @@
 .navbar-icon-button {
     color: #fff !important;
 }
+
+.navbar-scrollspy-link {
+    text-decoration: none;
+}
+
+.navbar-scrollspy {
+    color: #fff;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.active-scroll-spy {
+    text-decoration: underline;
+}

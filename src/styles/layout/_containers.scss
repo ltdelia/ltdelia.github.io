@@ -1,5 +1,9 @@
 // layout/_containers.scss
 
+html {
+    scroll-padding-top: 64px;
+}
+
 .sections-container {
     margin-top: 64px;
 }
