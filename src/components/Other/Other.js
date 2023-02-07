@@ -7,7 +7,12 @@ import MusicNoteIcon from "@mui/icons-material/MusicNote";
 import GraphicEqIcon from "@mui/icons-material/GraphicEq";
 import HeadphonesIcon from "@mui/icons-material/Headphones";
 
+import useMediaQuery from '@mui/material/useMediaQuery';
+
 export default function Other() {
+
+  const matches = useMediaQuery("(min-width:600px)");
+
   return (
     <>
       <Container fixed>
@@ -19,6 +24,7 @@ export default function Other() {
             </p>
             <ButtonGroup
               className="other-work-group"
+              orientation={`${matches ? `horizontal` : `vertical`}`}
               size="large"
               aria-label="large button group other work"
             >
@@ -27,21 +33,21 @@ export default function Other() {
                 href="https://ltdelia.bandcamp.com/"
                 target="_blank"
               >
-                <Button startIcon={<MusicNoteIcon />}>Bandcamp</Button>
+                <Button sx={{ width: '100%' }}startIcon={<MusicNoteIcon />}>Bandcamp</Button>
               </a>
               <a
                 className="other-work-group-link"
                 href="https://soundcloud.com/ltdelia"
                 target="_blank"
               >
-                <Button startIcon={<GraphicEqIcon />}>SoundCloud</Button>
+                <Button sx={{ width: '100%' }} startIcon={<GraphicEqIcon />}>SoundCloud</Button>
               </a>
               <a
                 className="other-work-group-link"
                 href="https://open.spotify.com/artist/5k1hEVXOmzLKwlicvbMwPN?si=5gAoM7fqSLi6QmlsXKgmXA"
                 target="_blank"
               >
-                <Button startIcon={<HeadphonesIcon />}>Spotify</Button>
+                <Button sx={{ width: '100%' }} startIcon={<HeadphonesIcon />}>Spotify</Button>
               </a>
             </ButtonGroup>
           </div>
