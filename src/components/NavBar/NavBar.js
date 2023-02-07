@@ -1,12 +1,10 @@
 import * as React from "react";
-import {
-  AppBar,
-  Box,
-  Menu,
-  MenuItem,
-  Toolbar,
-  Typography,
-} from "@mui/material";
+import AppBar from "@mui/material/AppBar";
+import Box from "@mui/material/Box";
+import Menu from "@mui/material/Menu";
+import MenuItem from "@mui/material/MenuItem";
+import Toolbar from "@mui/material/Toolbar";
+import Typography from "@mui/material/Typography";
 import IconButton from "@mui/material/IconButton";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import EmailIcon from "@mui/icons-material/Email";
@@ -55,13 +53,11 @@ export default function NavBar() {
 
   const onClick = (e) => {
     e.preventDefault();
-    console.log(e.currentTarget.querySelector("a"));
     const target = e.currentTarget.href
       ? window.document.getElementById(e.currentTarget.href.split("#")[1])
       : window.document.getElementById(
           e.currentTarget.querySelector("a").href.split("#")[1]
         );
-    console.log(target);
     if (target) {
       target.scrollIntoView({ behavior: "smooth" });
     }

@@ -1,5 +1,5 @@
 import * as React from "react";
-import { CssBaseline } from "@mui/material";
+import CssBaseline from "@mui/material/CssBaseline";
 import ScrollSpy from "react-ui-scrollspy";
 
 import AboutMe from "./components/AboutMe/AboutMe";
