@@ -50,7 +50,7 @@ export default function Footer() {
               </a>
             </div>
 
-            <div className="footer-copywright">&copy; 2023 Louis T. Delia</div>
+            <div className="footer-copywright">&copy; 2024 Louis T. Delia</div>
           </div>
         </Box>
       </Container>
